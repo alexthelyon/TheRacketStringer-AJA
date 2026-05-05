@@ -680,11 +680,26 @@ textarea.form-input { resize: vertical; min-height: 80px; }
   .machine-img     { order: -1; max-width: 240px; }
   .m-specs         { grid-template-columns: 1fr; }
   .spec-row        { grid-template-columns: 1fr; }
-  .nav-links { display: none; position: fixed; inset: 0; top: 66px;
-    background: rgba(255,255,255,.98); flex-direction: column;
-    align-items: stretch; padding: 1rem 2rem; z-index: 888; gap: .25rem; }
+  .nav-links { 
+    display: none; 
+    position: fixed; 
+    inset: 0; 
+    top: 72px;
+    background: var(--bg); 
+    flex-direction: column;
+    align-items: stretch; 
+    padding: 1.5rem 2rem; 
+    z-index: 888; 
+    gap: .5rem;
+    border-top: 1px solid var(--border);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  }
   .nav-links.open { display: flex; }
   .nav-toggle { display: flex; }
+  .nav-links a { font-size: 1.05rem; padding: .8rem 1rem; border-bottom: 1px solid var(--bg-alt); }
+  .nav-links a:last-child { border-bottom: none; }
+  .nav-links a.nav-cta { margin-top: .5rem; text-align: center; }
+
   .tabs { overflow-x: auto; }
   .loc-row { grid-template-columns: 1fr; gap: .3rem; }
   .hero-stats { flex-direction: column; border: none; gap: .5rem; }
