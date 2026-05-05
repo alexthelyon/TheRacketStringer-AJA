@@ -115,7 +115,26 @@ section { padding: 5rem 0; }
 .hero h1 { margin-bottom: .9rem; max-width: 620px; margin-left: auto; margin-right: auto; }
 .hero-sub {
   font-size: 1.05rem; color: var(--text-2);
-  max-width: 480px; margin: 0 auto 2.5rem;
+  max-width: 520px; margin: 0 auto 1.25rem;
+}
+.hero-sport-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  font-weight: 600;
+  color: var(--text-2);
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  align-items: center;
+}
+.hero-sport-icons span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.hero-dot {
+  color: var(--text-3);
+  font-size: 0.9rem;
 }
 .hero-btns { display: flex; gap: .75rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3.5rem; }
 
@@ -579,6 +598,9 @@ section { padding: 5rem 0; }
   background: var(--bg);
   padding: .5rem;
 }
+.loc-img.large {
+  max-width: 750px;
+}
 
 /* ══ CONTACT FORM ═══════════════════════════════════════════ */
 .contact-section {
@@ -674,6 +696,7 @@ textarea.form-input { resize: vertical; min-height: 80px; }
 }
 @media (max-width: 480px) {
   .wrap { padding: 0 1.25rem; }
+  .hero-sport-icons { font-size: 0.95rem; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2rem; }
   .cta-methods  { flex-direction: column; align-items: stretch; }
   .cta-item     { flex-direction: row; justify-content: flex-start; min-width: auto; }
   .footer-cols  { flex-direction: column; gap: 2rem; }
